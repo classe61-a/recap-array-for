@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recap ciclo for</title>
+    <link rel="stylesheet" href="./template/style.css">
+
+    <script type="text/javascript">
+
+      // dimmi in che posizione (la prima posizione è 0) si trova il numero 2 (se è presente più di una volta, dammi l'ultima)
+
+      const trovaIl2 = [0, 2, 4, 1, 2, 3, 6, 8, 2];
+
+      let posizioneDelDue = -1;
+
+      // for( let i = trovaIl2.length - 1; i >= 0; i-- ){
+      //   if( trovaIl2[ i ] === 2 && posizioneDelDue === -1 ){
+      //     posizioneDelDue = i;
+      //   }
+      // }
+
+      for( let i = 0; i < trovaIl2.length; i++ ){
+        if( trovaIl2[ i ] === 2 ){
+          posizioneDelDue = i;
+        }
+      }
+
+      if (posizioneDelDue == -1) {
+
+        console.log('Il numero 2 non è presente');
+
+      } else {
+
+        console.log('Il numero 2 si trova nella posizione: ' + (posizioneDelDue - 1));
+      }
+
+    </script>
+
+  </head>
+  <body>
+      
+    <div class="menu bg-light p-1 text-left">
+        <h2>Recap ciclo for e array</h2>
+    </div>
+    <div class="container py-2 text-center">
+        <p>Troviamo in che posizione (la prima posizione è 0) si trova il numero 2 (se è presente più di una volta, indichiamo l'ultima)</p>
+    </div>
+
+    <div class="logo-recap">
+        <span class="brackets">
+            [
+        </span> 
+        <span class="text">
+            Recap
+        </span>
+        <span class="brackets">
+            ]
+        </span>
+    </div>
+
+  </body>
+</html>

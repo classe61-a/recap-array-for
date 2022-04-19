@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recap ciclo for</title>
+    <link rel="stylesheet" href="./template/style.css">
+
+    <script type="text/javascript">
+
+        // dimmi se il numero 3 è presente nell'array
+
+        const mieiNumeriDaVerificare = [0, 2, 4, 1, 2, 3, 6, 8, 2];
+
+        let isPresente = false;
+
+        for(let i = 0; i < mieiNumeriDaVerificare.length; i++) {
+
+            if (mieiNumeriDaVerificare[i] == 3) {
+
+                isPresente = true;
+            }
+
+        }
+
+        if (isPresente) {
+
+            console.log("è presente");
+
+        } else {
+
+            console.log("non è presente");
+
+        }
+
+    </script>
+
+  </head>
+  <body>
+
+    <div class="menu bg-light p-1 text-left">
+        <h2>Recap ciclo for e array</h2>
+    </div>
+    <div class="container py-2 text-center">
+        <p>Controlliamo se il numero 3 è presente in un array</p>
+    </div>
+
+    <div class="logo-recap">
+        <span class="brackets">
+            [
+        </span> 
+        <span class="text">
+            Recap
+        </span>
+        <span class="brackets">
+            ]
+        </span>
+    </div>
+
+  </body>
+</html>
